@@ -1,0 +1,391 @@
+ html {
+	scroll-behavior: smooth;
+}
+ body {
+	 margin: 0;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	line-height: 1.5;
+	color: #fff;
+ }
+   h1,h2,h3,h4,h5,h6 {
+	 margin: 0;
+ }
+ h1 {
+	font-weight: 200;
+ }
+/* задаем фон сайту */
+.full_bg {
+	margin: 0;
+	background-image: url("../style/images/container.png");
+	background-attachment:fixed;
+	display:block;
+	/* background-size: cover; */
+}
+/* задаем дополнительный фон сайту */
+.style_bg {
+	background-color: #212529;
+	/* height: 357vh; */
+	height: 3900px;
+	max-width: 1300px;
+	margin: auto;
+	opacity: 0.9;
+}
+/* центрируем данные в фоне */
+.constructor {
+	width:100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.header {
+	background: #212529;
+}
+
+/* центрируем заголовки навигации */
+.header_info {
+	display:flex;
+	justify-content: space-between;
+	margin: auto auto;
+}
+/* полосочка после новигационной строки */
+.header:after {
+	content: "";
+	display: block;
+	width: 1200;
+	height: 3px;
+	margin: 10px auto 20px;
+	background-color: #fff;
+}
+/* заголовок: юридическая помощь */
+.main_header {
+	font-size: 18px;
+}
+/* новигационные заголовки */
+.supp_header {
+	margin: auto 0;
+}
+/* настройка новигационных заголовков */
+.supp_header a {
+	font-size: 16px;
+	margin: 10px 10px;
+	color: #fff;
+	text-decoration: none;
+}
+.nav_link {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 20px;
+	position: relative;
+
+	color: #ff2400;
+	text-decoration: none;
+
+	transition: color .2s linear;
+}
+.nav_link:after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 3px;
+
+	background-color: #ff2400;
+	opacity: 0;
+
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 1;
+
+	transition: opacity .2s linear;
+}
+.nav_link:hover {
+	color: #ff2400;
+}
+.nav_link:hover:after {
+	opacity: 1;
+}  
+/* полосочка после блока1 */
+.block1:after {
+	content: "";
+	display: block;
+	width: 1200;
+	height: 3px;
+	margin: 20px auto 20px;
+	background-color: #fff;
+}
+/* разделение блока попалам */
+.block_constructor {
+	display:flex;
+	justify-content: space-between;
+	margin: auto auto;
+}
+.text_block {
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: auto auto;
+}
+.all_text {
+	margin: 20px 20px 20px;
+}
+.main_text {
+	font-size:26px;
+	line-height: 1.2;
+	margin: 0 0 20px;
+}
+.opis_text {
+	font-size:14px;
+	font-weight: 100;
+}
+.button {
+	margin: 30px auto;
+}
+.btn {
+	display:inline-block;
+	padding: 15px 15px;
+
+	border: 2px solid #fff;
+	font-size:20px;
+	margin: 20px 20px 20px;
+
+	color: #fff;
+	text-decoration: none;
+	
+	transition: background.2s linear;
+}
+ .btn:hover {
+	background-color: #ff2400;
+}
+.photo_block {
+	margin: 20px 20px 20px;
+}
+.image_block img {
+	opacity: 1;
+}
+
+.block1 {
+	margin: 20px auto 20px;
+}
+.block2 {
+	margin: 20px auto 20px;
+}
+.name_block {
+	display:flex;
+	justify-content: center;
+}
+/* полосочка после блока2 */
+.block2:after {
+	content: "";
+	display: block;
+	width: 1200;
+	height: 3px;
+	margin: 20px auto 20px;
+	background-color: #fff;
+}
+.bloki_uslug{
+	display:flex;
+	justify-content: space-between;
+	/* width: 40%; */
+	text-align: center;
+	/* margin: auto auto; */
+}
+.name_uslugi {
+	padding: 10px 15px;
+	border: 2px solid #fff;
+	border-radius: 20px;
+	margin: 20px 20px 20px;
+	font-weight: 100;
+}
+.block_constructor1 {
+margin: 30px 10px 10px;
+}
+
+/* полосочка после блока3 */
+.block3:after {
+	content: "";
+	display: block;
+	width: 1200;
+	height: 3px;
+	margin: 20px auto 20px;
+	background-color: #fff;
+}
+
+.main_block_constructor2 {
+	display: flex;
+	align-content: center;
+	margin: 40px auto auto;
+}
+
+.supp_block_constructor2 {
+	display: flex;
+	flex-direction: column;
+}
+.kachestva {
+	padding: 10px 15px;
+	font-weight: 100;
+	margin: auto auto;
+	text-align: center;
+	font-size: 12px;
+}
+
+/* полосочка после блока4 */
+.block4:after {
+	content: "";
+	display: block;
+	width: 1200;
+	height: 3px;
+	margin: 20px auto 20px;
+	background-color: #fff;
+}
+.slogan {
+	display: flex;
+}
+.text_slogan {
+	font-weight: 100;
+	margin: 30px auto 20px;
+}
+.main_block_constructor3{
+	display:flex;
+	justify-content: center;
+}
+.contact_form{
+	width:600px;
+	margin-top:50px;
+}
+.form_inpits {
+	display:flex;
+	justify-content: space-between;
+	margin-bottom: 15px;
+}
+.block_form {
+	margin-right: 10px;
+}
+.red {
+	color: red;
+}
+textarea {
+	color: white;
+	width: 100%;
+	height: 100px;
+	resize: vertical;
+	min-height:100px;
+	background: transparent;
+	padding: 20px;
+}
+input[type=text] {
+	background: transparent;
+	color: white;
+	padding: 7px;
+}
+.p_text p {
+	margin: 0;
+}
+.button_block {
+	display:flex;
+	justify-content: flex-end;
+	margin: 15px 0;
+}
+input[type=submit] {
+	background: transparent;
+	
+	display:inline-block;
+	padding: 15px 15px;
+
+	border: 1px solid #fff;
+	font-size:20px;
+	color: #fff;
+	
+	transition: background.2s linear;
+}
+ input[type=submit]:hover {
+	background-color: #ff2400;
+}
+.mini_block {
+	display: flex;
+	justify-content: space-between;
+}
+.name_mini_block {
+	justify-content:space-between;
+	margin: 30px 50px;
+}
+.name_mini_block1 {
+	justify-content:space-between;
+	margin: 10px;
+}
+.text_info {
+	line-height: 1;
+	font-size: 14px;
+	font-weight: 100;
+}
+.name_text_info {
+	font-weight: 200;
+	font-size: 18px;
+}
+.text_mini_block {
+	margin: 10px 0;
+}
+.mini_block2 {
+	display: flex;
+	flex-direction: column;
+}
+.znaki_ss {
+	display: flex;
+}
+.znak_ss {
+	margin: auto;
+	filter: grayscale(1);
+	transition: 1s;
+}
+.block5:after {
+	content: "";
+	display: block;
+	width: 1200;
+	height: 3px;
+	margin: 20px auto 20px;
+	background-color: #fff;
+}
+.znak_ss:hover {
+	filter: grayscale(0);
+}
+.end_info {
+    display: flex;
+    justify-content: flex-end;
+	opacity: 0.5;
+	width: 98%;
+}
+.my_contact {
+	font-size: 12px;
+    margin: auto 3px;	
+}
+
+.sap_end_info {
+    display: flex;
+}
+.my_contact_ref {
+	font-size: 18px;
+	color: #fff;
+	transition: color .1s linear;
+}
+.my_contact_ref:hover {
+	color: #ff2400;
+}
+.my_contact_ref:hover:after {
+	opacity: 1;
+} 
+.back_to_top {
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+	width: 50px;
+	border-radius: 60px;
+	cursor: pointer;
+	transition: 0.4s linear;
+}
+.back_to_top p {
+	margin: 0;
+}
+.back_to_top:hover {
+	background: red;
+	border-radius: 50px;
+}
+
