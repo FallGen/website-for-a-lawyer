@@ -277,6 +277,11 @@ input[type=text] {
 	color: white;
 	padding: 7px;
 }
+input[type=tel] {
+	background: transparent;
+	color: white;
+	padding: 7px;
+}
 .p_text p {
 	margin: 0;
 }
