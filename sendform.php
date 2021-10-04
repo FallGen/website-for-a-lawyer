@@ -1,27 +1,34 @@
 <?php
-use PHPMailer\src\PHPMailer;
-use PHPMailer\src\Exception;
-
-require 'PHPMailer/src/PHPMailer.php';
-require 'PHPMailer/src/Exception.php';
-
+//1 этап: получение данных
 $name = trim($_POST['name_user']);
 $phone = trim($_POST['tel']);
-$hidden = trim($_POST['text']);
-$fromMail = 'info@site.ru';
-$fromName = 'Поступила заявка с сайта'; 
-$emailTo = 'n_332@bk.ru';
-$subject - 'Форма обратной связи site.com';
-$subject - '=?utf-8?b?'. base64_encode($subject) .'?=';
-$headers = "Content-type: text/plain; charset=\"utf-8\"\r\n";
-$headers .= "From: ". $fromName ." <". $fromMail ."> \r\n";
+$text = trim($_POST['problem_text']);
 
-$body = "Получено письмо с сайта \n Имя: $name\nТелефон: $phone\n Проблема: $text";
+//2 этап: обработка данных
+$name = htmlspecialchars($name);
+$phone = htmlspecialchars($phone);
+$text = htmlspecialchars($text);
 
-if (strlen($phone) > 0) {
+$name = urldecode($name);
+$phone = urldecode($phone);
+$text = urldecode($text);
 
-$mail - mail($emailTo, $subject, $body, $headers, .'-f'. $fromMa11 ); 
-return;
-}
+$name = trim($name);
+$phone = trim($phone);
+$text = trim($text);
 
+//3 этап: отправка данных на почту
+if(mail("n_332@bk.ru","новое письмо с сайта",
+						"имя: ".$name."\n".
+						"телефон: ".$phone."\n".
+						"проблема: ".$text,
+						"From: no-reply@mydomain.ru /r/n")
+						) {
+							echo ('письмо успешно отправлено!');
+						}
+						else {
+																			echo ('обращение не отправлено, проверьте данные');
+						}
+						
+						
 ?>

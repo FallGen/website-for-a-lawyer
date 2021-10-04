@@ -144,20 +144,20 @@
 				<div class= "main_block_constructor3">
 					<div class= "contact_form">
 						<div class= "contact_write">
-							<form action="#" name="newform" method="post">
+							<form action="sendform.php" name="newform" method="post">
 								<div class="p_text">
 									<div class="form_inpits">
 										<div class= "block_form">
 										<p>Ваше имя: <span class="red">* </span></p>
-										<input type="text" name="name_user" placeholder= "Имя">
+										<input type="text" name="name_user" placeholder= "Имя" required>
 										</div>
 										<div class= "block_form">
 										<p>Номер телефона: <span class="red">* </span></p>
-										<input type="text" name="tel" placeholder= "Телефон">
+										<input type="tel" name="tel" placeholder= "Телефон" required>
 										</div>
 									</div>
 									<p>Суть Вашей проблемы:<span class="red">*</span></p>
-									<textarea name="text" placeholder= "Краткая информация о проблеме"></textarea>
+									<textarea name="problem_text" placeholder= "Краткая информация о проблеме"></textarea>
 									<div class="button_block">
 										<input type="submit" value="Оставить заявку">
 									</div>
